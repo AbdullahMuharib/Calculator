@@ -51,10 +51,7 @@
     }
     if(!empty($r)){
     echo "The Resulut of Your calculator is :".$r;
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 33f059d (Cal)
+    
     }
          
     ?>
