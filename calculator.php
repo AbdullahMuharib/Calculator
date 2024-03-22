@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="get" action="http://localhost/Code/calculator.php">
-    <input type="Number" name="x">
-    <br><br>
-    <input type="Number" name="y">
-
+    <h1>Calculator</h1><form method="get" action="http://localhost/Code/calculator.php">
+    <span>Number1:</span><input type="Number" name="x">
+    <br>
+    <span>Parameter:</span><input type="text" name="p">
+    <br>
+    <span>Number2:</span><input type="Number" name="y">
+    <br>
     <input type="submit">
 
     </form>
@@ -18,12 +20,37 @@
     <?php
     $x=$_GET["x"];
     $y=$_GET["y"];
+    $p=$_GET["p"];
+    $r;
 
-    echo $x;
-    echo "<br>";
-    echo $y;
-    #fcfdnfdklnklscnmdcfndc
-    #fvdvfvfddf
+    
+    switch ($p) {
+        case '+':
+            $r=$x+$y;
+            break;
+        case '-':
+            $r=$x-$y;
+            break;
+        case '*':
+            $r=$x*$y;
+            break;
+        case '/':
+            $r=$x/$y;
+            break; 
+        case '%':
+            $r=$x%$y;
+            break;  
+        case '**':
+            $r=$x**$y;
+            break;         
+        
+        default:
+            echo "Parameter shoulde be (+,-,*,/,**,%)";
+            break;
+    }
+    if(!empty($r)){
+    echo "The Resulut of Your calculator is :".$r;
+    }
          
     ?>
 </body>
