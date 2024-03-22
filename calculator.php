@@ -50,6 +50,7 @@
     }
     if(!empty($r)){
     echo "The Resulut of Your calculator is :".$r;
+    
     }
          
     ?>
