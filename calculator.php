@@ -19,11 +19,43 @@
     $x=$_GET["x"];
     $y=$_GET["y"];
 
+<<<<<<< HEAD
     echo $x;
     echo "<br>";
     echo $y;
     #fcfdnfdklnklscnmdcfndc
     #fvdvfvfddf
+=======
+    
+    switch ($p) {
+        case '+':
+            $r=$x+$y;
+            break;
+        case '-':
+            $r=$x-$y;
+            break;
+        case '*':
+            $r=$x*$y;
+            break;
+        case '/':
+            $r=$x/$y;
+            break; 
+        case '%':
+            $r=$x%$y;
+            break;  
+        case '**':
+            $r=$x**$y;
+            break;         
+        
+        default:
+            echo "Parameter shoulde be (+,-,*,/,**,%)";
+            break;
+    }
+    if(!empty($r)){
+    echo "The Resulut of Your calculator is :".$r;
+    
+    }
+>>>>>>> parent of 41aafc7 (HII)
          
     ?>
 </body>
