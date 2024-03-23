@@ -19,13 +19,6 @@
     $x=$_GET["x"];
     $y=$_GET["y"];
 
-<<<<<<< HEAD
-    echo $x;
-    echo "<br>";
-    echo $y;
-    #fcfdnfdklnklscnmdcfndc
-    #fvdvfvfddf
-=======
     
     switch ($p) {
         case '+':
@@ -54,9 +47,8 @@
     if(!empty($r)){
     echo "The Resulut of Your calculator is :".$r;
     
-    }
->>>>>>> parent of 41aafc7 (HII)
-         
+    }         
+
     ?>
 </body>
 </html>
