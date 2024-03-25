@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--  HIIIIIIIedwedwIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII  -->
+    <!--  Official  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Calculator</h1><form method="get" action="http://localhost/Code/calculator.php">
-    <span>Number1:</span><input type="Number" name="x">
+    <form method="post" action="http://localhost/Code/calculator.php">
+    <span>Number 1:</span><input type="Number" name="x">
     <br>
-    <span>Parameter:</span><input type="text" name="p">
+    <span>Paramater:</span><input type="text" name="p">
     <br>
-    <span>Number2:</span><input type="Number" name="y">
-    <br>
+    <span>Number 2:</span><input type="Number" name="y">
+    <br><br>
     <input type="submit">
 
     </form>
-   
+    <br>
     <?php
-    $x=$_GET["x"];
-    $y=$_GET["y"];
-    $p=$_GET["p"];
+    $x=$_POST["x"];
+    $p=$_POST["p"];
+    $y=$_POST["y"];
     $r;
 
     
@@ -50,13 +50,13 @@
             break;
     }
     if(!empty($r)){
-    echo "The Resulut of Your calculator is :".$r;
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of 33f059d (Cal)
-    }
-         
+  
+    echo "The Resulut of Your calculation is : <h2><strong>".$r."</strong></h2>";
+    
+    }         
+
+     
     ?>
 </body>
 </html>
