@@ -24,7 +24,6 @@
     $y=$_POST["y"];
     $r;
 
-    
     switch ($p) {
         case '+':
             $r=$x+$y;
